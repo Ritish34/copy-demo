@@ -1,0 +1,12 @@
+package rules;
+import com.example.springdrool.model.Order;
+import com.example.springdrool.model.User;
+dialect  "mvel"
+
+rule "Demo Rule"
+    when
+    order : Order(name == "laptop" && price >= 10000)
+    user : User(id == 1 && salary > 30000)
+    then
+    order.setDiscount(5000);
+end
