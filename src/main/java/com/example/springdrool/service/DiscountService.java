@@ -18,7 +18,7 @@ public class DiscountService {
         KieSession session = container.newKieSession();
         User user = new User();
         user.setId(1);
-        user.setEmail("dhruvi2@gmail.com");
+        user.setEmail("dhruvi92@gmail.com");
         user.setSalary(50000);
 
 
