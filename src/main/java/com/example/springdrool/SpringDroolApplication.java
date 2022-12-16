@@ -14,6 +14,6 @@ public class SpringDroolApplication extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringApplication.class);
+		return application.sources(SpringDroolApplication.class);
 	}
 }
